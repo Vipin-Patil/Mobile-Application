@@ -6,31 +6,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".Startup">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/maintenanceIcon"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Maintenance Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/messageText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"/>
 
     <TextView
-        android:id="@+id/welcomeText"
+        android:id="@+id/messageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, I am Ditto"
+        android:text="Work in Progress..."
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/actionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's Go"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/purple_500"
-        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintTop_toBottomOf="@id/maintenanceIcon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
